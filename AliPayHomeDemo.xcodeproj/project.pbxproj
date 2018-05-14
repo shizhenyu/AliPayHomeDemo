@@ -181,7 +181,7 @@
 				DE49985F20A7CBE8001C85C2 /* AppDelegate.m */,
 				DE49986120A7CBE8001C85C2 /* ViewController.h */,
 				DE49986220A7CBE8001C85C2 /* ViewController.m */,
-				DE6595B520A998AF00D03393 /* Resources */,
+				DE6595B520A998AF00D03393 /* Photos */,
 				DE4998EE20A7ED9E001C85C2 /* View */,
 				DE4998EA20A7D2E0001C85C2 /* Helper */,
 				DE49987820A7D264001C85C2 /* Vendor */,
@@ -379,12 +379,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		DE6595B520A998AF00D03393 /* Resources */ = {
+		DE6595B520A998AF00D03393 /* Photos */ = {
 			isa = PBXGroup;
 			children = (
 				DE6595B620A998DD00D03393 /* result.gif */,
 			);
-			path = Resources;
+			path = Photos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

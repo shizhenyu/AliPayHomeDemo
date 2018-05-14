@@ -50,6 +50,7 @@
 		DE4998ED20A7D332001C85C2 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4998EC20A7D332001C85C2 /* BaseNavigationController.m */; };
 		DE4998F120A7EDCF001C85C2 /* HomeUsualFeatureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4998F020A7EDCF001C85C2 /* HomeUsualFeatureCell.m */; };
 		DE4998F420A7EFDE001C85C2 /* HomeCommonFeatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4998F320A7EFDE001C85C2 /* HomeCommonFeatureView.m */; };
+		DE6595B720A998DD00D03393 /* result.gif in Resources */ = {isa = PBXBuildFile; fileRef = DE6595B620A998DD00D03393 /* result.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -141,6 +142,7 @@
 		DE4998F020A7EDCF001C85C2 /* HomeUsualFeatureCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeUsualFeatureCell.m; sourceTree = "<group>"; };
 		DE4998F220A7EFDE001C85C2 /* HomeCommonFeatureView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeCommonFeatureView.h; sourceTree = "<group>"; };
 		DE4998F320A7EFDE001C85C2 /* HomeCommonFeatureView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeCommonFeatureView.m; sourceTree = "<group>"; };
+		DE6595B620A998DD00D03393 /* result.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = result.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 				DE49985F20A7CBE8001C85C2 /* AppDelegate.m */,
 				DE49986120A7CBE8001C85C2 /* ViewController.h */,
 				DE49986220A7CBE8001C85C2 /* ViewController.m */,
+				DE6595B520A998AF00D03393 /* Resources */,
 				DE4998EE20A7ED9E001C85C2 /* View */,
 				DE4998EA20A7D2E0001C85C2 /* Helper */,
 				DE49987820A7D264001C85C2 /* Vendor */,
@@ -376,6 +379,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DE6595B520A998AF00D03393 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE6595B620A998DD00D03393 /* result.gif */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -438,6 +449,7 @@
 				DE49986B20A7CBE8001C85C2 /* LaunchScreen.storyboard in Resources */,
 				DE4998E320A7D2B0001C85C2 /* MJRefresh.bundle in Resources */,
 				DE49986820A7CBE8001C85C2 /* Assets.xcassets in Resources */,
+				DE6595B720A998DD00D03393 /* result.gif in Resources */,
 				DE4998D320A7D2B0001C85C2 /* README.md in Resources */,
 				DE4998C820A7D2B0001C85C2 /* LICENSE in Resources */,
 				DE4998E920A7D2B0001C85C2 /* README.md in Resources */,

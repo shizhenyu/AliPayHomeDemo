@@ -37,6 +37,20 @@ NSString *const tableViewObserverKeypath = @"contentOffset";
 #pragma mark - 生命周期
 - (void)dealloc {
     
+    NSLog(@"执行dealloc方法");
+    
+    /**
+     
+     ⚠️ 这里不可以用self.调用tableView
+     
+     因为tableView的delegate遵循了UIScrollViewDelegate，而UITableView的父类UIScrollView重写了UIScrollViewDelegate的setter方法，如果self.调用tableView，那么就会调用tableView的delegate，就重写了UIScrollViewDelegate的setter方法
+     
+     释放时，会先走子类的dealloc，后走父类的dealloc，在父类dealloc的时候，因为UIScrollViewDelegate的setter方法被子类重写了，那么父类就会先去子类重走UIScrollViewDelegate的setter方法，但此时子类已经被释放掉了，那么就会出现重复释放，导致crash
+     
+     
+     不能在init和dealloc中使用accessor的原因是由于面向对象的继承、多态特性与accessor可能造成的副作用联合导致的。继承和多态导致在父类的实现中调用accessor可能导致调用到子类重写的accessor，而此时子类部分并未完全初始化或已经销毁，导致原有的假设不成立，从而出现一系列的逻辑问题甚至崩
+     */
+    
     [_tableView removeObserver:self forKeyPath:tableViewObserverKeypath];
 }
 
